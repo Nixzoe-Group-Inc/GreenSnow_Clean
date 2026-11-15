@@ -2,7 +2,7 @@ import axios from 'axios';
 import { LoginData, RegisterData, ForgotPasswordData } from '../types/authTypes';
 
 // Mock Base URL (replace with actual API URL once available)
-const BASE_URL = 'https://your-api-base-url.com/api'; // Replace with your actual API base URL
+const BASE_URL = 'https://api.greensnowapp.ca/api'; // Replace with your actual API base URL
 
 /**
  * Log in a user (mock implementation).
