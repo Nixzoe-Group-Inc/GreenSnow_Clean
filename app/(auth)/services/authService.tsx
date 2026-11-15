@@ -1,8 +1,7 @@
 import axios from 'axios';
 import { LoginData, RegisterData, ForgotPasswordData } from '../types/authTypes';
 
-// Mock Base URL (replace with actual API URL once available)
-const BASE_URL = 'https://api.greensnowapp.ca/api'; // Replace with your actual API base URL
+const BASE_URL = 'https://api.greensnowapp.ca';
 
 /**
  * Log in a user (mock implementation).
@@ -11,15 +10,13 @@ const BASE_URL = 'https://api.greensnowapp.ca/api'; // Replace with your actual 
  */
 export const login = async (data: LoginData) => {
   try {
-    // Simulate an API delay
-    await new Promise(resolve => setTimeout(resolve, 1000)); // 1-second delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
-    // Mock login logic
     if (data.email === 'test@example.com' && data.password === 'password123') {
       return {
         message: 'Login successful!',
         user: { name: 'John Doe', email: 'test@example.com' },
-        token: 'mock-jwt-token', // Replace with actual token when available
+        token: 'mock-jwt-token',
       };
     } else {
       throw new Error('Invalid credentials');
@@ -29,8 +26,6 @@ export const login = async (data: LoginData) => {
   }
 };
 
-
-
 /**
  * Register a new user (mock implementation).
  * @param data - The registration details.
@@ -38,15 +33,13 @@ export const login = async (data: LoginData) => {
  */
 export const register = async (data: RegisterData) => {
   try {
-    // Simulate an API delay
-    await new Promise(resolve => setTimeout(resolve, 1000)); // 1-second delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
-    // Mock registration logic
     if (data.email === 'newuser@example.com') {
       return {
         message: 'Registration successful!',
         user: { name: data.name, email: data.email },
-        token: 'mock-jwt-token', // Replace with actual token when available
+        token: 'mock-jwt-token',
       };
     } else {
       throw new Error('Email already exists');
@@ -56,8 +49,6 @@ export const register = async (data: RegisterData) => {
   }
 };
 
-
-
 /**
  * Handle forgot password functionality (mock implementation).
  * @param data - The user's email for password recovery.
@@ -65,10 +56,8 @@ export const register = async (data: RegisterData) => {
  */
 export const forgotPassword = async (data: ForgotPasswordData) => {
   try {
-    // Simulate an API delay
-    await new Promise(resolve => setTimeout(resolve, 1000)); // 1-second delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
-    // Mock forgot password logic
     if (data.email === 'test@example.com') {
       return {
         message: 'Password reset link sent to your email!',
