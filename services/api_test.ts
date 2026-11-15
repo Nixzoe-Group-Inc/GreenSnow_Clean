@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { EmployeeProps, EmployerProps, OngoingShiftProps, ShiftApplicationProps, ShiftDetailsProps, ShiftRankProps, ShiftRatingsProps, UpcomingShiftProps, UserProps } from './types';
 // const API_URL_SHIFTS = 'https://pokeapi.co/api/v2/pokemon/ditto';
-  // Define the base URL of your Django API
-const API_SHIFTS_URL = 'http://192.168.43.55:8000/api/shifts/';
+  // Define the base URL of your API
+const API_SHIFTS_URL = 'https://api.greensnowapp.ca/shifts/';
 // const API_SHIFTS_URL = 'http://192.168.243.33:8000/api/shifts/';
-const BASE_URL = 'http://192.168.43.55:8000/api';
+const BASE_URL = 'https://api.greensnowapp.ca';
 // const BASE_URL = 'http://192.168.243.33:8000/api/';
 
 
